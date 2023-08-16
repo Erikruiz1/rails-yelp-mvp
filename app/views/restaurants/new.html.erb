@@ -1,0 +1,9 @@
+<p>rest. new</p>
+<%= simple_form_for @restaurant do |f| %>
+  <%= f.input :name %>
+  <%= f.input :address %>
+  <%= f.input :category, collection: ["chinese", "italian", "japanese", "french", "belgian"], prompt: "Choose a category"%>
+  <%# <%= f.label :review %>
+  <%# <%= f.number_field :review %>
+  <%= f.submit %>
+<% end %>

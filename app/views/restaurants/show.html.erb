@@ -1,0 +1,7 @@
+
+<h2><%= @restaurant.name %></h2>
+<p><%= @restaurant.address %></p>
+<p><%= @restaurant.category %></p>
+<%# <p><%= @restaurant.reviews %>
+<%= link_to "Restaurants index", restaurants_path %>
+<%= link_to "new review", new_restaurant_review_path, class:"btn btn-primary" %>
